@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lib_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_name"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/item_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/book_shadow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/item_image"
+            android:layout_alignStart="@+id/item_image"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/image_not_found" />
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_shadow"
+            android:layout_alignEnd="@+id/item_shadow"
+            android:layout_alignStart="@+id/item_shadow"
+            android:layout_alignTop="@id/item_shadow"
+            android:layout_marginBottom="11dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter" />
+
+
+        <ImageView
+            android:id="@+id/item_label_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/item_shadow"
+            android:layout_alignTop="@id/item_shadow"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="12dp"
+            android:scaleType="centerCrop"
+            android:background="@android:color/transparent"
+            android:src="@drawable/book_new"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

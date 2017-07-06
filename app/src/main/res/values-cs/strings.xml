@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="main_leave">Stisknětě znova zpět pro odchod</string>
+   <string name="image_not_found">Obrázek nenalezen</string>
+   <string name="loading">Načítání…</string>
+   <string name="load_magazines">Načítání knihovny</string>
+</resources>
